@@ -116,7 +116,7 @@ input[type=checkbox]{
 /* Text and nav properties */
     display: flex;
     align-items: center;
-    margin-left: 77%;
+    margin-left: 79%;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
@@ -125,7 +125,6 @@ input[type=checkbox]{
     color: #77989a;
     /* gap: 5px; */
     top: 93%;
-    
     position: fixed;
     width: 20%;
     z-index: 100;
@@ -233,7 +232,9 @@ input[type=checkbox]{
     flex-wrap: wrap;
 	flex-direction: row;
     align-items: flex-start;
-	justify-content: space-around;
+	justify-content: center;
+    /* row-gap: 10px; */
+    /* column-gap: 0px; */
     /* align-content: space-between; */
     /* gap: 1vh; */
 	width: 100%;
@@ -249,21 +250,46 @@ input[type=checkbox]{
 
 .image-container {
 	text-align: center;
-	width: 30vw;
-    height: auto;
+	width: 25vw;
+    height: 24vw;
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 30pt;
 }
 
 .gallery-image {
 	border-radius: 6px;
-	border: solid 1px black;
+	border: solid 5px rgba(0, 0, 0, 0.25);;
 	width: 420px;
-    margin-top: 2%;
+    margin-top: 3%;
 	margin: 10;
 }
 
 .gallery-image:hover {
+    color: #77989a;
 	opacity: 0.5;
 }
+
+.image-container:hover {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Text on image  */
+.textone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.textone:hover {
+    color: rgb(0, 0, 0);
+    font-size: 50pt;
+}
+/* Text on image  */
+
+
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
