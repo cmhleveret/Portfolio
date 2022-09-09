@@ -1,7 +1,5 @@
 
 
-
-
 body{
     background-image: url("../images/cubejetalt.svg");
     background-color: black;
@@ -27,13 +25,15 @@ body{
    li {
     list-style: none; 
    }
-   a-lower {
+   /* a-lower {
     text-decoration: none;
    }
    li-lower {
     list-style: none; 
-   }
+   } */
 
+
+/* upper nav bar */
    /* NAVBAR STYLING STARTS */
 .navbar {
     /* Text and nav properties */
@@ -103,6 +103,11 @@ body{
     display: block;
    }
 
+   .navbar:hover {
+    opacity: 1;
+   }
+
+
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
@@ -148,33 +153,149 @@ input[type=checkbox]{
     background-color: #747b86;
    }
 }
+/* upper nav bar */
+
+/* lower nav bar */
+.navbar-lower {
+    /* Text and nav properties */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #222831;
+    opacity: 0.85;
+    color: #77989a;
+    /* gap: 5px; */
+    top: 91%;
+    /* right: 40%; */
+    position: fixed;
+    width: 40%;
+    z-index: 100;
+   }
+
+   .nav-links-lower a {
+    color: rgb(168, 167, 167);
+   }
+
+   /* LOGO */
+   .logo-lower {
+    /* font-size: 10px; */
+    width: 15%;
+        /* height: 20vw;
+    transform: rotate(90deg); */
+   }
+   /* NAVBAR MENU */
+   .menu-lower {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu-lower li:hover {
+    background-color: #747b86;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu-lower li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services-lower {
+    position: relative; 
+   }
+   .dropdown-lower {
+    background-color: #222831;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 5px;
+    top: 35px;
+   }
+   .dropdown-lower li + li {
+    margin-top: 10px;
+   }
+   .dropdown-lower li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown-lower li:hover {
+    background-color: #747b86;
+   }
+   .services-lower:hover .dropdown {
+    display: block;
+   }
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger-lower {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu-lower { 
+    display:none;
+    position: absolute;
+    background-color:#747b86;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu-lower li:hover {
+    display: inline-block;
+    background-color:#747b86;
+    transition: 0.3s ease;
+   }
+   .menu-lower li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger-lower {
+    display: block;
+   }
+   .dropdown-lower {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown-lower li:hover {
+    background-color: #747b86;
+   }
+}
+/* lower nav bar */
 
 
-
-
-
-
-
-
-
+/* content */
 .main-flex-container{
 	display: flex;
-	flex-direction: column;
-    align-items: center;
-	/* justify-content: space-between; */
+    flex-wrap: wrap;
+	flex-direction: row;
+    /* align-items: flex-start; */
+	justify-content: space-around;
+    /* align-content: space-between; */
+    gap: 1vh;
 	width: 100%;
+    height: auto;
 	/* height: 200vw; */
     /* background-color: #4d4f53; */
     margin-top: 10vh;
-    /* opacity: 0.5; */
+    opacity: 1;
     z-index: -1;
 }
 
 .main-box{
     /* RECENT WORK?! */
     /* z-index: -1;  */
-    /* background-color: #4d4f53; */
-   
+    background-color: #4d4f53;
+
     font-family: "Audiowide", sans-serif;
     text-align: center;
     line-height: 65vh;
@@ -187,6 +308,43 @@ input[type=checkbox]{
     z-index: 50;
     opacity: 1;
 }
+
+.imgone {
+    width: 30vw; 
+    height: auto;
+}
+
+.imgtwo {
+    width: 30vw; 
+    height: auto;
+}
+
+.imgthree {
+    width: 30vw; 
+    height: auto;
+}
+
+.imgfour {
+    width: 30vw; 
+    height: auto;
+}
+
+.imgfive {
+    width: 30vw; 
+    height: auto;
+}
+
+.imgsix {
+    width: 30vw; 
+    height: auto;
+}
+
+
+/* .content-one{
+    background-image: url("../images/sam.png");
+    height: 10%;
+   
+} */
 
 /* ADD A FOOTER TO THE PAGE */
 /* ADD OPAQUE DIVS TO SURROUND IMAGES AND VIDEOS */
