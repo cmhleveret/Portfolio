@@ -25,18 +25,10 @@ body{
    li {
     list-style: none; 
    }
-   /* a-lower {
-    text-decoration: none;
-   }
-   li-lower {
-    list-style: none; 
-   } */
-
-
 /* upper nav bar */
-   /* NAVBAR STYLING STARTS */
+/* NAVBAR STYLING STARTS */
 .navbar {
-    /* Text and nav properties */
+/* Text and nav properties */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,14 +47,14 @@ body{
     color: rgb(168, 167, 167);
    }
 
-   /* LOGO */
+/* LOGO */
    .logo {
     /* font-size: 10px; */
     width: 15%;
-        /* height: 20vw;
+    /* height: 20vw;
     transform: rotate(90deg); */
    }
-   /* NAVBAR MENU */
+/* NAVBAR MENU */
    .menu {
     display: flex;
     gap: 1em;
@@ -76,7 +68,7 @@ body{
    .menu li {
     padding: 5px 14px;
    }
-   /* DROPDOWN MENU */
+/* DROPDOWN MENU */
    .services {
     position: relative; 
    }
@@ -106,20 +98,18 @@ body{
    .navbar:hover {
     opacity: 1;
    }
-
-
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
     display: none;
    } 
-   /*HAMBURGER MENU*/
+/*HAMBURGER MENU*/
    .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
    }
-   /* APPLYING MEDIA QUERIES */
+/* APPLYING MEDIA QUERIES */
    @media (max-width: 768px) {
    .menu { 
     display:none;
@@ -153,13 +143,14 @@ input[type=checkbox]{
     background-color: #747b86;
    }
 }
-/* upper nav bar */
-
-/* lower nav bar */
+/* end of upper nav bar */
+/* start of lower nav bar */
 .navbar-lower {
-    /* Text and nav properties */
+/* Text and nav properties */
     display: flex;
     align-items: center;
+    margin-left: 68%;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 10px;
     background-color: #222831;
@@ -169,22 +160,21 @@ input[type=checkbox]{
     top: 91%;
     /* right: 40%; */
     position: fixed;
-    width: 40%;
+    width: 30%;
     z-index: 100;
    }
 
    .nav-links-lower a {
     color: rgb(168, 167, 167);
    }
-
-   /* LOGO */
+/* LOGO */
    .logo-lower {
     /* font-size: 10px; */
-    width: 15%;
-        /* height: 20vw;
+    width: 40%;
+    /* height: 20vw;
     transform: rotate(90deg); */
    }
-   /* NAVBAR MENU */
+/* NAVBAR MENU */
    .menu-lower {
     display: flex;
     gap: 1em;
@@ -198,7 +188,7 @@ input[type=checkbox]{
    .menu-lower li {
     padding: 5px 14px;
    }
-   /* DROPDOWN MENU */
+/* DROPDOWN MENU */
    .services-lower {
     position: relative; 
    }
@@ -224,19 +214,18 @@ input[type=checkbox]{
    .services-lower:hover .dropdown {
     display: block;
    }
-
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
     display: none;
    } 
-   /*HAMBURGER MENU*/
+/*HAMBURGER MENU*/
    .hamburger-lower {
     display: none;
     font-size: 24px;
     user-select: none;
    }
-   /* APPLYING MEDIA QUERIES */
+/* APPLYING MEDIA QUERIES */
    @media (max-width: 768px) {
    .menu-lower { 
     display:none;
@@ -270,11 +259,8 @@ input[type=checkbox]{
     background-color: #747b86;
    }
 }
-/* lower nav bar */
-
-
+/* end of lower nav bar */
 /* content */
-
 .gallery {
 	display: flex;
     flex-wrap: wrap;
@@ -323,13 +309,4 @@ input[type=checkbox]{
 		width: 100%;
 	}
 }
-
-
-/* .content-one{
-    background-image: url("../images/sam.png");
-    height: 10%;
-   
-} */
-
-/* ADD A FOOTER TO THE PAGE */
-/* ADD OPAQUE DIVS TO SURROUND IMAGES AND VIDEOS */
+/* end of content */
