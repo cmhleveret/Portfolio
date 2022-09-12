@@ -150,6 +150,7 @@ input[type=checkbox]{
    .logo-lower {
     /* font-size: 10px; */
     width: 40%;
+    height: auto;
     /* height: 20vw;
     transform: rotate(90deg); */
    }
@@ -368,7 +369,7 @@ input[type=checkbox]{
   
 } */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .menu { 
         display:none;
         position: absolute;
@@ -462,6 +463,13 @@ input[type=checkbox]{
         width: 40%;
         z-index: 100;
     }
+
+    .logo-lower {
+    
+        width: 20%;
+        height: auto;
+      
+       }
 }
 
 /* @media screen and (max-width: 650px) {
